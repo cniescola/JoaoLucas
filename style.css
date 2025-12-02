@@ -145,7 +145,6 @@ header {
 .drop{
     position:absolute;
     width: 140px;
-    height: 200px;
     background-color:rgb(255, 255, 255);
     box-shadow: -3px 4px 6px rgb(0 0 0 / 17%);
     top: 60px;
@@ -162,6 +161,8 @@ header {
     width: 100%;
     height: 100%;
     display: flex;
+    padding: 15px;
+    margin: 0;
     flex-direction: column;
     justify-content: start;
     align-items: start;
@@ -174,4 +175,34 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.drop ul li{
+    color: black;
+    width: 100%;
+    height: 40px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.137);
+    list-style:none;
+    text-align: start;
+    align-content: center;
+}
+
+.drop ul li:hover{
+    color:crimson;
+}
+
+.icones li i{
+    transition:0.3s;
+}
+
+.icones li:hover i{
+    color:crimson;
+    cursor: pointer;
+}
+
+main{
+    background-image: url(main.jpg);
+    background-position: center;
+    width: 100%;
+    height: 100vh;
 }
