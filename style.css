@@ -206,3 +206,60 @@ main{
     width: 100%;
     height: 100vh;
 }
+
+.cabecario_baixo li:nth-child(7) .drop
+{
+    width:1100px;
+    background-color:white;
+    left: -720px;
+    display: flex;
+    flex-direction: row;
+}
+.cabecario_baixo li:nth-child(7) .drop > div{
+    display: flex;
+    flex-direction:column;
+    height:100%;
+    padding: 50px;
+}
+.cabecario_baixo li:nth-child(7) .drop .titulo{
+    color:black;
+    font-size: 20px;
+}
+
+.cabecario_baixo li:nth-child(7) .drop .informs{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.cabecario_baixo li:nth-child(7) .drop .informs .link{
+    min-width: 150px;
+    margin:2px;
+    position: relative;
+    transition: 0.3s;
+}
+
+.cabecario_baixo li:nth-child(7) .drop .informs span{
+    position: absolute;
+    background-color: brown;
+    width: 2px;
+    height: 100%;
+    left: 15px;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.cabecario_baixo li:nth-child(7) .drop .informs .link:hover span{
+    opacity: 1;
+    left: 0;
+}
+
+
+.cabecario_baixo li:nth-child(7) .drop .informs .link:hover{
+    padding-left:20px;
+}
+
+.cabecario_baixo li:nth-child(7) .drop .informs .link a{
+    text-decoration: none;
+    color:rgba(0, 0, 0, 0.664);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
