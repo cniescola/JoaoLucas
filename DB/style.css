@@ -1,0 +1,61 @@
+body{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background:url(fundo.jpeg);
+    background-size: cover;
+}
+
+#pai{
+    width: 400px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 2px 5px 12px black ;
+     background-color: rgb(237 71 38 / 59%);
+    align-items: center;
+    justify-content: center;
+}
+
+form{
+    max-width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    padding: 30px;
+    align-items: center;
+    gap: 30px;
+   
+}
+.digi{
+
+    width: 80%;
+    height: 50px;
+     border-radius:15px;
+    border:none;
+    padding:8px;
+   
+}
+
+.btn{
+    width: 80%;
+    height: 50px;
+     background-color: #eb4e81;
+      box-shadow: 2px 1px 5px rgba(0, 0, 0, 0.486);
+      border: none;
+      color: white;
+      cursor: pointer;
+      transition: 0,3;
+}
+
+input::placeholder{
+    text-align: center;
+}  
