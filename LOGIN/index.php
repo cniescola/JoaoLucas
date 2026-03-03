@@ -36,21 +36,37 @@
         <nav class="baixo">
             <div class="esq">
                 <ul>
-                    <li><a href="#">Produtos verdes</a></li>
-                    <li><a href="#">Produtos Azuis</a></li>
-                    <li>
-                        <select name="opcao" id="">
-                            <option value="verde">verde</option>
-                            <option value="azul">azul</option>
-                            <option value="amarelo">amarelo</option>
-                            <option value="vermelho">vermelho</option>
-                        </select>
-                    </li>
+                    <li><a href="#">Produtos de Casa</a></li>
+                    <li><a href="#">Eletrodomésticos</a></li>
+                    <li><a href="#">Moda</a></li>
+                    <li><a href="#">Beleza</a></li>
+                    <li><a href="#">Ferramentas</a></li>
+                    <li><a href="#">Automotivo</a></li>
+                    
                 </ul>
             </div>
             <div class="dir">Vamos la galera</div>
         </nav>
     </header>
+
+    <main>
+        <div class="prods">
+            <div class="cards">
+                <div class="img">
+                    <img src="eletronico1.jpg" alt="">
+                </div>
+                <div class="topico1">
+                    <div class="percent">27% off</div> <span>Semana do Consumidor</span>
+                </div>
+                <div class="topico2">
+                    <div class="v1">R$<span>269</span>00</div>
+                    <div class="v2">De: <span>R$369,00</span></div>
+                </div>
+                <div class="topico3"></div>
+                <div class="topico4"></div>
+            </div>
+        </div>
+    </mani>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
   </body>
