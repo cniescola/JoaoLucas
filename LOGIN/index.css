@@ -118,4 +118,106 @@ header .baixo .esq ul{
     list-style: none;
     gap: 20px;
     margin: 0;
+    height: 100%;
+}
+
+header .baixo .esq ul li a{
+    text-decoration:none;
+    color:white;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+header .baixo .esq ul li a:hover{
+    border:1px solid white;
+}
+
+
+
+main{
+    width:100%;
+    min-height: 100vh;
+    background-color: #febd69;
+    padding:20px;
+}
+
+main .prods{
+    width: 100%;
+    height: 100vh;
+    background-color:white;
+}
+
+main .prods .cards{
+    width:206px;
+    height:350px;
+    border:1px solid black;
+}
+
+main .prods .cards .img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 200px;
+}
+
+main .prods .cards img{
+    height: 100%;
+    object-fit: cover;
+}
+main .prods .cards .topico1{
+    padding:10px 0;
+    display: flex;
+    flex-direction: row;
+}
+main .prods .cards .topico1 .percent{
+    width: 50px;
+    height:25px;
+    background-color: #cc0c39;
+    color:white;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .topico1 span{
+    color: #cc0c39;
+    font-size: 11px;
+    margin-left:3px;
+    font-weight: bold;
+    display: flex;
+    height: 25px;
+    justify-content: start;
+    align-items: center;
+}
+
+main .topico2{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+main .topico2 .v1{
+    font-size: 10px;
+    display: flex;
+    justify-content: start;
+
+}
+
+main .topico2 .v1 span{
+    font-size: 17px;
+    margin-top: -3px;
+    font-weight: 500;
+}
+
+main .topico2 .v2{
+    font-size: 13px;
+    color:#232f3d9a;
+ 
+}
+
+main .topico2 .v2 span{
+    text-decoration: line-through;
 }
