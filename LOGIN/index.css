@@ -144,14 +144,20 @@ main{
 
 main .prods{
     width: 100%;
-    height: 100vh;
     background-color:white;
+    padding: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
 }
 
 main .prods .cards{
     width:206px;
     height:350px;
-    border:1px solid black;
+    
 }
 
 main .prods .cards .img{
@@ -160,11 +166,11 @@ main .prods .cards .img{
     align-items: center;
     width: 100%;
     height: 200px;
+    overflow: hidden;
 }
 
 main .prods .cards img{
-    height: 100%;
-    object-fit: cover;
+      scale: 84%;
 }
 main .prods .cards .topico1{
     padding:10px 0;
@@ -220,4 +226,21 @@ main .topico2 .v2{
 
 main .topico2 .v2 span{
     text-decoration: line-through;
+}
+
+main .topico3{
+    color:#000000;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+main .topico3:hover{
+    color:#c7511f;
+}
+
+main .topico4{
+    font-size: 13px;
+    color:#2162a1;
+    cursor: pointer;
+    margin-top: 5px;
 }

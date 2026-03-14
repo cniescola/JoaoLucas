@@ -62,8 +62,182 @@
                     <div class="v1">R$<span>269</span>00</div>
                     <div class="v2">De: <span>R$369,00</span></div>
                 </div>
-                <div class="topico3"></div>
-                <div class="topico4"></div>
+                <div class="topico3">
+                    Smartphone Motorola Edge 60 5G - 512GB 24GB (12GB RA…
+                </div>
+                <div class="topico4">
+                    Ofertas de Motorola
+                </div>
+            </div>
+
+            <div class="cards">
+                <div class="img">
+                    <img src="eletronico2.jpg" alt="">
+                </div>
+                <div class="topico1">
+                    <div class="percent">27% off</div> <span>Semana do Consumidor</span>
+                </div>
+                <div class="topico2">
+                    <div class="v1">R$<span>269</span>00</div>
+                    <div class="v2">De: <span>R$369,00</span></div>
+                </div>
+                <div class="topico3">
+                    Celular Samsung Galaxy S25 FE 5G, 128GB, 8GB, Câmera…
+                </div>
+                <div class="topico4">
+                    Ofertas de Motorola
+                </div>
+            </div>
+
+            <div class="cards">
+                <div class="img">
+                    <img src="eletronico3.jpg" alt="">
+                </div>
+                <div class="topico1">
+                    <div class="percent">27% off</div> <span>Semana do Consumidor</span>
+                </div>
+                <div class="topico2">
+                    <div class="v1">R$<span>269</span>00</div>
+                    <div class="v2">De: <span>R$369,00</span></div>
+                </div>
+                <div class="topico3">
+                   Kindle 16 GB (Geração mais recente) - Leve e compacto, c…
+                </div>
+                <div class="topico4">
+                    Ofertas de Motorola
+                </div>
+            </div>
+
+            <div class="cards">
+                <div class="img">
+                    <img src="eletronico5.jpg" alt="">
+                </div>
+                <div class="topico1">
+                    <div class="percent">27% off</div> <span>Semana do Consumidor</span>
+                </div>
+                <div class="topico2">
+                    <div class="v1">R$<span>269</span>00</div>
+                    <div class="v2">De: <span>R$369,00</span></div>
+                </div>
+                <div class="topico3">
+                    Fire TV Stick HD (Geração mais recente) | Com controle rem…
+                </div>
+                <div class="topico4">
+                    Ofertas de Motorola
+                </div>
+            </div>
+
+            <div class="cards">
+                <div class="img">
+                    <img src="eletronico6.jpg" alt="">
+                </div>
+                <div class="topico1">
+                    <div class="percent">27% off</div> <span>Semana do Consumidor</span>
+                </div>
+                <div class="topico2">
+                    <div class="v1">R$<span>269</span>00</div>
+                    <div class="v2">De: <span>R$369,00</span></div>
+                </div>
+                <div class="topico3">
+                    PlayStation DualSense Controle sem fio – Branco
+                </div>
+                <div class="topico4">
+                    Ofertas de Motorola
+                </div>
+            </div>
+
+            <div class="cards">
+                <div class="img">
+                    <img src="eletronico4.jpg" alt="">
+                </div>
+                <div class="topico1">
+                    <div class="percent">27% off</div> <span>Semana do Consumidor</span>
+                </div>
+                <div class="topico2">
+                    <div class="v1">R$<span>269</span>00</div>
+                    <div class="v2">De: <span>R$369,00</span></div>
+                </div>
+                <div class="topico3">
+                   Echo Spot com Alexa (Geração mais recente) | Despertador i…
+                </div>
+                <div class="topico4">
+                    Ofertas de Motorola
+                </div>
+            </div>
+
+            <div class="cards">
+                <div class="img">
+                    <img src="eletronico7.jpg" alt="">
+                </div>
+                <div class="topico1">
+                    <div class="percent">27% off</div> <span>Semana do Consumidor</span>
+                </div>
+                <div class="topico2">
+                    <div class="v1">R$<span>269</span>00</div>
+                    <div class="v2">De: <span>R$369,00</span></div>
+                </div>
+                <div class="topico3">
+                    Apple AirPods 4
+                </div>
+                <div class="topico4">
+                    Ofertas de Motorola
+                </div>
+            </div>
+
+            <div class="cards">
+                <div class="img">
+                    <img src="eletronico8.jpg" alt="">
+                </div>
+                <div class="topico1">
+                    <div class="percent">27% off</div> <span>Semana do Consumidor</span>
+                </div>
+                <div class="topico2">
+                    <div class="v1">R$<span>269</span>00</div>
+                    <div class="v2">De: <span>R$369,00</span></div>
+                </div>
+                <div class="topico3">
+                    Smartphone Motorola Edge 60 5G - 512GB 24GB (12GB RA…
+                </div>
+                <div class="topico4">
+                    Ofertas de Motorola
+                </div>
+            </div>
+
+            <div class="cards">
+                <div class="img">
+                    <img src="eletronico9.jpg" alt="">
+                </div>
+                <div class="topico1">
+                    <div class="percent">27% off</div> <span>Semana do Consumidor</span>
+                </div>
+                <div class="topico2">
+                    <div class="v1">R$<span>269</span>00</div>
+                    <div class="v2">De: <span>R$369,00</span></div>
+                </div>
+                <div class="topico3">
+                    ELG, F80N, Suporte Articulado de Mesa, Pistão a Gás, Desig…
+                </div>
+                <div class="topico4">
+                    Ofertas de Motorola
+                </div>
+            </div>
+            <div class="cards">
+                <div class="img">
+                    <img src="eletronico10.jpg" alt="">
+                </div>
+                <div class="topico1">
+                    <div class="percent">27% off</div> <span>Semana do Consumidor</span>
+                </div>
+                <div class="topico2">
+                    <div class="v1">R$<span>269</span>00</div>
+                    <div class="v2">De: <span>R$369,00</span></div>
+                </div>
+                <div class="topico3">
+                    ELG, F80N, Suporte Articulado de Mesa, Pistão a Gás, Desig…
+                </div>
+                <div class="topico4">
+                    Ofertas de Motorola
+                </div>
             </div>
         </div>
     </mani>
