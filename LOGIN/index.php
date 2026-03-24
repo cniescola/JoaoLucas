@@ -15,7 +15,7 @@
     <header>
         <nav class="cima">
             <div class="esq">
-                <img src="logo.png">
+                <img src="dp.jpg" alt="">
             </div>
             <div class="mei">
                 <form action="#">
@@ -52,9 +52,7 @@
     <main>
         <div class="prods">
             <div class="cards">
-                <div class="img">
-                    <img src="eletronico1.jpg" alt="">
-                </div>
+                <div class="esq img" style="--bgimage: url('eletronico1.jpg')"></div>
                 <div class="topico1">
                     <div class="percent">27% off</div> <span>Semana do Consumidor</span>
                 </div>
@@ -71,9 +69,7 @@
             </div>
 
             <div class="cards">
-                <div class="img">
-                    <img src="eletronico2.jpg" alt="">
-                </div>
+                <div class="esq img" style="--bgimage: url('eletronico3.jpg')"></div>
                 <div class="topico1">
                     <div class="percent">27% off</div> <span>Semana do Consumidor</span>
                 </div>
@@ -90,9 +86,7 @@
             </div>
 
             <div class="cards">
-                <div class="img">
-                    <img src="eletronico3.jpg" alt="">
-                </div>
+                <div class="esq img" style="--bgimage: url('eletronico4.jpg')"></div>
                 <div class="topico1">
                     <div class="percent">27% off</div> <span>Semana do Consumidor</span>
                 </div>
@@ -109,9 +103,7 @@
             </div>
 
             <div class="cards">
-                <div class="img">
-                    <img src="eletronico5.jpg" alt="">
-                </div>
+                <div class="esq img" style="--bgimage: url('eletronico5.jpg')"></div>
                 <div class="topico1">
                     <div class="percent">27% off</div> <span>Semana do Consumidor</span>
                 </div>
@@ -128,9 +120,7 @@
             </div>
 
             <div class="cards">
-                <div class="img">
-                    <img src="eletronico6.jpg" alt="">
-                </div>
+                <div class="esq img" style="--bgimage: url('eletronico6.jpg')"></div>
                 <div class="topico1">
                     <div class="percent">27% off</div> <span>Semana do Consumidor</span>
                 </div>
@@ -147,9 +137,7 @@
             </div>
 
             <div class="cards">
-                <div class="img">
-                    <img src="eletronico4.jpg" alt="">
-                </div>
+                <div class="esq img" style="--bgimage: url('eletronico7.jpg')"></div>
                 <div class="topico1">
                     <div class="percent">27% off</div> <span>Semana do Consumidor</span>
                 </div>
@@ -166,9 +154,7 @@
             </div>
 
             <div class="cards">
-                <div class="img">
-                    <img src="eletronico7.jpg" alt="">
-                </div>
+                <div class="esq img" style="--bgimage: url('eletronico1.jpg')"></div>
                 <div class="topico1">
                     <div class="percent">27% off</div> <span>Semana do Consumidor</span>
                 </div>
@@ -241,7 +227,55 @@
             </div>
         </div>
     </mani>
+    <div id="cadastra">cadastra</div>
 
+    <script>
+        const botao = document.getElementById('cadastra');
+
+        botao.addEventListener('click',function(){
+            const cards = document.querySelectorAll('.cards');
+
+            cards.forEach(card => {
+                var image = card.querySelector('.img');
+                image = image.getAttribute('style');
+
+                var titulo =card.querySelector('.topico3');
+                titulo = titulo.textContent;
+
+                var subtitulo = card.querySelector('.topico4');
+                subtitulo = subtitulo.textContent;
+
+                var preco = card.querySelector('.topico2 .v1 span');
+                preco = preco.textContent;
+
+                var subpreco = card.querySelector('.topico2 .v2');
+                subpreco = subpreco.textContent;
+
+                var oferta = card.querySelector('.topico1 .percent');
+                oferta = oferta.textContent;
+
+                var auxiliar = card.querySelector('.topico1 span');
+                auxiliar = auxiliar.textContent;
+
+                var data = new data();
+
+                data.append('image',image);
+                data.append('titulo',titulo);
+                data.append('subtitulo',subtitulo);
+                data.append('preco',preco);
+                data.append('subpreco',subpreco);
+                data.append('oferta',oferta);
+                data.append('auxiliar',auxiliar);
+
+                console.log(data);
+
+
+                
+
+                
+            });
+        });
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
   </body>
 </html>

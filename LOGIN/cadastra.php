@@ -11,8 +11,8 @@
     
     <div id="geral">
         <form action="cadastra.php" action="POST">
-            <div class="img">
-                <img src="dp.jpg" alt="">
+            <div class="img" style="--bgimage: url('eletronico1.jpg');">
+                
             </div>
             <div class="inputs">
                 
