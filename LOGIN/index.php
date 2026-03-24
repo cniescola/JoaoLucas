@@ -194,7 +194,7 @@
                     <img src="eletronico9.jpg" alt="">
                 </div>
                 <div class="topico1">
-                    <div class="percent">27% off</div> <span>Semana do Consumidor</span>
+                    <div class="percent">27% off</div> <span><?php echo "teste"; ?></span>
                 </div>
                 <div class="topico2">
                     <div class="v1">R$<span>269</span>00</div>
