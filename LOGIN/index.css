@@ -243,3 +243,10 @@ main .topico4{
     cursor: pointer;
     margin-top: 5px;
 }
+
+#cadastra{
+    width: 400px;
+    height: 500px;
+    background-color: yellow;
+    color:red;
+}

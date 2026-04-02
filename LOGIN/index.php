@@ -227,53 +227,69 @@
             </div>
         </div>
     </mani>
+    <div class="informa"></div>
     <div id="cadastra">cadastra</div>
 
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
     <script>
         const botao = document.getElementById('cadastra');
 
         botao.addEventListener('click',function(){
             const cards = document.querySelectorAll('.cards');
+            var data = new FormData();
+            var cardList = [];
 
             cards.forEach(card => {
                 var image = card.querySelector('.img');
-                image = image.getAttribute('style');
+                image = image ? image.getAttribute('style') : '';
 
-                var titulo =card.querySelector('.topico3');
-                titulo = titulo.textContent;
+                var titulo = card.querySelector('.topico3');
+                titulo = titulo ? titulo.textContent : '';
 
                 var subtitulo = card.querySelector('.topico4');
-                subtitulo = subtitulo.textContent;
+                subtitulo = subtitulo ? subtitulo.textContent : '';
 
                 var preco = card.querySelector('.topico2 .v1 span');
-                preco = preco.textContent;
+                preco = preco ? preco.textContent : '';
 
                 var subpreco = card.querySelector('.topico2 .v2');
-                subpreco = subpreco.textContent;
+                subpreco = subpreco ? subpreco.textContent : '';
 
                 var oferta = card.querySelector('.topico1 .percent');
-                oferta = oferta.textContent;
+                oferta = oferta ? oferta.textContent : '';
 
                 var auxiliar = card.querySelector('.topico1 span');
-                auxiliar = auxiliar.textContent;
+                auxiliar = auxiliar ? auxiliar.textContent : '';
 
-                var data = new data();
+                let valor = {
+                    "image":image,
+                    "titulo":titulo,
+                    "subtitulo":subtitulo,
+                    "preco":preco,
+                    "subpreco":subpreco,
+                    "oferta":oferta,
+                    "auxiliar":auxiliar
+                };
 
-                data.append('image',image);
-                data.append('titulo',titulo);
-                data.append('subtitulo',subtitulo);
-                data.append('preco',preco);
-                data.append('subpreco',subpreco);
-                data.append('oferta',oferta);
-                data.append('auxiliar',auxiliar);
-
-                console.log(data);
-
-
-                
-
-                
+                cardList.push(valor);
             });
+
+            data.append("data", JSON.stringify(cardList));
+
+            $.ajax({
+                url:"cadastra.php",
+                method:"POST",
+                data: data,
+                processData:false,
+                contentType:false,
+                success: function( result ) {
+                   $('#cadastra').html(result);
+                },
+                error: function(xhr){
+                    console.log('ERRO', xhr.status, xhr.responseText);
+                }
+            });
+           
         });
     </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>

@@ -1,51 +1,44 @@
-<!doctype html>
-<html lang="pt-br">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-  </head>
-  <body>
-    
-    <div id="geral">
-        <form action="cadastra.php" action="POST">
-            <div class="img" style="--bgimage: url('eletronico1.jpg');">
-                
-            </div>
-            <div class="inputs">
-                
-                <div class="inp">
-                    <label>
-                        <span><i class="bi bi-person-fill"></i></span>
-                        Username
-                    </label>
-                    <input type="text" placeholder="John Smith">
-                </div>
+<?php
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
 
-                <div class="inp">
-                    <label>
-                        <span><i class="bi bi-envelope"></i></span>
-                        Email
-                    </label>
-                    <input type="email" placeholder="JohnSmith@gmail.com">
-                </div>
+$dados = $_POST['data'] ?? null;
+if (!$dados) {
+    exit('Nenhum dado recebido.');
+}
 
-                <div class="inp">
-                    <label>
-                        <span><i class="bi bi-lock-fill"></i></span>
-                        Password
-                    </label>
-                    <input type="password" placeholder="*****">
-                </div>
+$json = json_decode($dados, true);
+if (json_last_error() !== JSON_ERROR_NONE) {
+    exit('JSON inválido: ' . json_last_error_msg());
+}
 
-            </div>
-            <div class="btn"></div>
-        </form>
-    </div>
+$con = new mysqli('localhost', 'root', 'cniaraguari85', 'produtos', 3306);
+if ($con->connect_errno) {
+    exit('Erro de conexão MySQL: ' . $con->connect_error);
+}
 
+$stmt = $con->prepare('INSERT INTO produto (titulo, subtitulo, preco, subpreco, oferta, auxiliar, `image`) VALUES (?, ?, ?, ?, ?, ?, ?)');
+if (!$stmt) {
+    exit('Erro prepare: ' . $con->error);
+}
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-  </body>
-</html>
+foreach ($json as $item) {
+    $titulo    = $item['titulo']    ?? '';
+    $subtitulo = $item['subtitulo'] ?? '';
+    $preco     = $item['preco']     ?? '';
+    $subpreco  = $item['subpreco']  ?? '';
+    $oferta    = $item['oferta']    ?? '';
+    $auxiliar  = $item['auxiliar'] ?? '';
+    $imagem    = $item['imagem']    ?? $item['image'] ?? '';
+
+    $stmt->bind_param('sssssss', $titulo, $subtitulo, $preco, $subpreco, $oferta, $auxiliar, $imagem);
+    if ($stmt->execute()) {
+        echo "Produto '{$titulo}' inserido com sucesso.<br>";
+    } else {
+        echo "Erro ao inserir '{$titulo}': " . $stmt->error . "<br>";
+    }
+}
+
+$stmt->close();
+$con->close();
