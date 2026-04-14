@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+
+
+    <header>
+        <div class="alfa">
+            <a href="index.php" class="texto btn btn-transparent-dark btn-sm">
+                <div class="icon">
+                    <i class="bi bi-arrow-left"></i>
+                </div>
+                <p>
+                    Pagina Inicial
+                </p>
+            </a>
+        </div>
+
+        <div class="alfa">
+            <div class="btn"><i class="bi bi-plus-circle"></i></div>
+            <div class="btn"><i class="bi bi-file-x"></i></div>
+            <div class="btn"><i class="bi bi-brush"></i></div>
+        </div>
+
+        <div class="alfa">
+            <p class="btn btn-transparent-dark btn-sm">Pagina de Cadastro</p>
+        </div>
+    </header>
+
+    <main></main>
+
+    <footer> </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
+    <script>
+        $(document).ready(function(){
+            $('header .alfa:nth-child(2) .btn:nth-child(1)').click(()=>{
+                
+            $.ajax({
+                url:"paginas/AdicionarProduto.php",
+                processData:false,
+                contentType:false,
+                success: function( result ){
+                    $('main').html(result);
+                }
+            });
+
+            });
+        });
+    </script>
+</body>
+
+</html>
