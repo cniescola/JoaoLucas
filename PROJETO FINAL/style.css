@@ -76,3 +76,7 @@ main{
     min-height:100vh;
 
 }
+
+.adicionar .card{
+    box-shadow: 0 20px 27px 0 rgba(0, 0, 0, 0.142);
+}
